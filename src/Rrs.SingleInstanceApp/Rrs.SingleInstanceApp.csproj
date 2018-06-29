@@ -1,7 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net40</TargetFramework>
+    <Description>Rrs.SingleInstanceApp Class Library</Description>
+    <Authors>Robert Snipe</Authors>
+    <Copyright>Copyright (c) 2018 Robert Snipe</Copyright>
+    <TargetFrameworks>netstandard2.0;net40</TargetFrameworks>
+    <AssemblyName>Rrs.SingleInstanceApp</AssemblyName>
+    <PackageId>Rrs.SingleInstanceApp</PackageId>
+    <PackageTags>Single Instance App;Net40</PackageTags>
+    <PackageProjectUrl>https://github.com/rrs/SingleInstanceApp</PackageProjectUrl>
+    <Version>1.0.0</Version>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Company>rrs</Company>
+    <RootNamespace>Rrs.SingleInstanceApp</RootNamespace>
   </PropertyGroup>
 
 </Project>
