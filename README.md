@@ -1,0 +1,1 @@
+.net 40 compatable Task helpers. Helper for single instance applications.
