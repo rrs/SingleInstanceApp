@@ -14,7 +14,7 @@ namespace Rrs.SingleInstanceApp
             {
                 if (mutex.WaitOne(TimeSpan.Zero, true))
                 {
-                    var scheduler = TaskScheduler.FromCurrentSynchronizationContext();
+                    var scheduler = SynchronizationContext.Current == null ? TaskScheduler.Current : TaskScheduler.FromCurrentSynchronizationContext();
                     WaitOrTimerCallback callback = delegate
                     {
                         Task.Factory.StartNew(() => app.Activate(), CancellationToken.None, TaskCreationOptions.None, scheduler);
